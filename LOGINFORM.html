@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+</head>
+<body>
+     <!-- Navigation -->
+    <nav>
+
+        <h2>ABEDY COMPANY   </h2>
+
+        <div>
+            <a href="HOME.HTML">Home</a>
+            <a href="ABOUT.HTM">About</a>
+            <a href="SERVICES.HTML">Services</a>
+            <a href="CONTACT.HTML">Contact</a>
+            <a href="LOGINFORM.HTML">Login</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Contact section -->
+    <form action="login.php" method="post">
+        <h1>Login</h1>
+        <marquee><p>Welcome back! Please enter your credentials to log in.</p></marquee>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Login">
+        <a href="SIGNUP.HTML">sign up</a>
+        <p><a href="FORGOTPASSWORD.HTML">forget password?</a></p>
+         <p style="text-align: center;">By signing up, you agree to our <a href="TERMSOFSERVICES.HTML">Terms of Service</a> and <a href="PRIVACYPOLICY.HTML">Privacy Policy</a>.</p>
+    </form>
+</body>
+    <footer>
+        <p5>© 2026 ABEDY COMPANY. All rights reserved.</p5>
+</body>
+<style>
+   body{
+    background-color: #448e8b;
+    font-family: Arial, sans-serif;
+   }
+
+    h1 {
+        text-align: center;
+    }
+
+    form {
+        background-color: #fff;
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(31, 62, 40, 0.1);
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    a {
+        display: grid;
+        margin-top: 10px;
+        text-align: center;
+        color: #0d459f;
+        text-decoration: none;
+    }
+    p3 {
+        text-align: center;
+    }
+    footer {
+        text-align: center;
+        font-size: 12px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .loginbutton:hover {
+        background-color: #16074f;
+    }
+</style>
+<style>
+
+nav {
+    background-color: #087f23;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 40px;
+}
+
+/* Company name */
+nav h2 {
+    color: white;
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Links container */
+nav div {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Links */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Mouse over */
+nav a:hover {
+    color: #b6ffb6;
+}
+
+</style>
+</html> 

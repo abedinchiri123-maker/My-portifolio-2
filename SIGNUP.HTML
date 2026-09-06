@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+    
+    <form action="signup.php" method="post">
+         <h1>Sign Up</h1>
+         <marquee><p>Welcome! Please fill in the form below to create an account.</p></marquee>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required minlength="5" maxlength="20"
+        pattern="^[A-Za-z]+$"
+        title="Username must contain only letters and be between 5 and 20 characters long"
+        ><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="8" maxlength="20" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$" title="Password must contain at least one uppercase letter, one lowercase letter, and one number"><br><br>
+        <input type="submit" value="Sign Up">
+        <p> have an account? <a href="LOGINFORM.html">login</a></p>
+        <p >By signing up, you agree to our <a href="TERMSOFSERVICES.HTML">Terms of Service</a> and <a href="PRIVACYPOLICY.HTML">Privacy Policy</a>.</p>
+    </form>
+    <footer>
+        <p5>© 2026 ABEDY COMPANY. All rights reserved.</p5>
+    </footer>
+</body>
+</body>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #448e8b;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    h1 {
+        text-align: center;
+        
+    }
+
+    form {
+        background-color: #fff;
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(31, 62, 40, 0.1);
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #611111;
+        border-radius: 10px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #3f7b94;
+        color: rgb(28, 78, 16);
+        border: none;
+        border-radius: 10px;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    a {
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+        color: #4CAF50;
+        text-decoration: none;
+    }
+    p {
+        text-align: center;
+        text-decoration: rgb(101, 68, 18);
+        text-decoration-color: #82497b;
+        padding: 1ch;
+
+    }
+    footer {
+        text-align: center;
+        font-size: 12px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    
+  </style>
+</html>
